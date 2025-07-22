@@ -7,7 +7,7 @@ interface DishModalProps {
   onClose: () => void;
 }
 
-const DishModal: React.FC<DishModalProps> = ({ dish, onClose }) => {
+export default function DishModal({ dish, onClose }: DishModalProps){
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -67,5 +67,3 @@ const DishModal: React.FC<DishModalProps> = ({ dish, onClose }) => {
     </div>
   );
 };
-
-export default DishModal;

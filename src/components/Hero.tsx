@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero: React.FC = () => {
+export default function Hero(){
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -34,4 +34,3 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;

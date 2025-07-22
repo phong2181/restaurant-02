@@ -6,7 +6,7 @@ interface DishCardProps {
   onViewDetails: (dish: Dish) => void;
 }
 
-const DishCard: React.FC<DishCardProps> = ({ dish, onViewDetails }) => {
+export default function DishCard({ dish, onViewDetails }: DishCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
       <div className="relative h-48 overflow-hidden">
@@ -19,7 +19,7 @@ const DishCard: React.FC<DishCardProps> = ({ dish, onViewDetails }) => {
           ${dish.price}
         </div>
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-2">
           {dish.name}
@@ -27,7 +27,7 @@ const DishCard: React.FC<DishCardProps> = ({ dish, onViewDetails }) => {
         <p className="text-gray-600 mb-4 line-clamp-3">
           {dish.description}
         </p>
-        
+
         <button
           onClick={() => onViewDetails(dish)}
           className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200"
@@ -37,6 +37,4 @@ const DishCard: React.FC<DishCardProps> = ({ dish, onViewDetails }) => {
       </div>
     </div>
   );
-};
-
-export default DishCard;
+}

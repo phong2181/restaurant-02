@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChefHat } from 'lucide-react';
 
-const Header: React.FC = () => {
+export default function Header(){
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -92,4 +92,3 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;

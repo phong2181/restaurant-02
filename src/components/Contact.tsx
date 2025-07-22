@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 
-const Contact: React.FC = () => {
+export default function Contact(){
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,5 +74,3 @@ const Contact: React.FC = () => {
     </section>
   );
 };
-
-export default Contact;

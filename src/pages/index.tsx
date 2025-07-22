@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import DishModal from '../components/DishModal';
 import { Dish } from '../types/Dish';
 
-export default function App() {
+export default function HomePage() {
   const [selectedDish, setSelectedDish] = useState<Dish | null>(null);
 
   const handleViewDetails = (dish: Dish) => {
